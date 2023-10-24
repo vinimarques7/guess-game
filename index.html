@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()"> <!-- Ao carregar a página ele executa a função init --> 
+    <main>
+        <div class="main-container">
+            <div class="container">
+                <h1>Guess the Number </h1>
+                <h1>1 - 100</h1>
+                <h3 id="textOutput">Your Guess:</h3>
+                <input type="number" id="number" min="1" max="100" onchange="compareNumbers()"> <!--onchange vai chamar a função assim que apertar enter--> 
+            </div>
+            <div class="container-2">
+                <p class="number">Number of attempts: <span id="attempts"></span></p>
+                <p class="guess">Your guesses: <span id="guesses"></span></p>
+            </div>
+            <div class="new-game" id="new">
+                <button type="button" onclick="newGame()"><strong>NEW GAME</strong></button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
